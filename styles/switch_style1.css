@@ -1,0 +1,31 @@
+table { 
+    background-color: darkslateblue;
+    color: aliceblue;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+td, th {
+    text-align: left;
+    padding-top: 40px;
+}
+
+th {
+    background-color: #999;
+    padding-left: 35px;
+}
+  
+th:nth-child(1)::before {
+    content: "\f2c1";
+    font-family: "Font Awesome 6 Free";
+    margin-right: 5px;
+}
+
+tbody tr:nth-child(even) {
+    color: honeydew;
+    height: 120px;
+}
+
+tbody tr:nth-child(odd) {
+    color: indigo;
+}

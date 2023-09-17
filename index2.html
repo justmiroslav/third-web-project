@@ -1,0 +1,96 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"/>
+        <link rel="stylesheet" type="text/css" href="styles/switch_style.css">
+        <link rel="stylesheet" id="styles_id" href="">
+        <title>table</title>
+    </head>
+    <body>
+        <div class="scroll"> 
+            <table> 
+                <thead> 
+                    <tr> 
+                        <th>Name</th> 
+                        <th>Age</th> 
+                        <th>Job</th> 
+                    </tr> 
+                </thead> 
+                <tbody> 
+                    <tr> 
+                        <td>John</td> 
+                        <td>30</td> 
+                        <td>Teacher</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Mike</td> 
+                        <td>41</td> 
+                        <td>Doctor</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Mary</td> 
+                        <td>28</td> 
+                        <td>Nurse</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Bob</td> 
+                        <td>35</td> 
+                        <td>Engineer</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Susan</td> 
+                        <td>29</td> 
+                        <td>Lawyer</td> 
+                    </tr> 
+                    <tr> 
+                        <td>James</td> 
+                        <td>45</td> 
+                        <td>Manager</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Sarah</td> 
+                        <td>32</td> 
+                        <td>Accountant</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Mark</td> 
+                        <td>25</td> 
+                        <td>Programmer</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Laura</td> 
+                        <td>27</td> 
+                        <td>Designer</td> 
+                    </tr> 
+                    <tr> 
+                        <td>David</td> 
+                        <td>36</td> 
+                        <td>Architect</td> 
+                    </tr> 
+                    <tr> 
+                        <td>Lisa</td> 
+                        <td>42</td> 
+                        <td>Administrator</td> 
+                    </tr> 
+                </tbody> 
+            </table> 
+        </div>
+        <div class="buttons">
+            <button onclick="switchStyle('styles/switch_style1.css')">Style 1</button>
+            <button onclick="switchStyle('styles/switch_style2.css')">Style 2</button>
+            <button onclick="switchStyle('styles/switch_style3.css')">Style 3</button>
+        </div>
+        <script>
+            function switchStyle(newHref) {
+                let stylesheet = document.getElementById("styles_id")
+                if (stylesheet) {
+                    stylesheet.href = newHref;
+                } else {
+                    console.error("Stylesheet not found!")
+                }
+            } 
+        </script>
+    </body>
+</html>
